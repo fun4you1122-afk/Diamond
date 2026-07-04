@@ -11,8 +11,8 @@ Legend: ⬜ needed · ✅ received & wired
 - ✅ `assets/img/logo/favicon.png` — browser-tab icon
 
 ## Home (`index.html`)
-- ⬜ `assets/video/hero.mp4` — hero background video (muted loop; ~10–20s, landscape)
-- ⬜ `assets/img/hero/hero-poster.jpg` — still shown before the video loads
+- ✅ `assets/video/hero.mp4` — hero background video (compressed 25 MB → 5.9 MB, audio stripped)
+- ✅ `assets/img/hero/hero-poster.jpg` — poster frame extracted from the video
 - ⬜ `assets/img/home/under-one-roof.jpg` — "everything under one roof" photo
 - ⬜ `assets/img/qr/qr-checkin.jpg` — QR check-in feature photo
 - ⬜ `assets/img/gallery/` — 5 portfolio photos (shared with Gallery)
