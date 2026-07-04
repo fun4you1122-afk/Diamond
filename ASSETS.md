@@ -5,7 +5,10 @@ send them and I'll place + wire them). Any filename is fine — I'll rename to m
 Legend: ⬜ needed · ✅ received & wired
 
 ## Brand
-- ⬜ `assets/img/logo/logo.png` — logo (transparent PNG/SVG, ideally light + dark versions)
+- ✅ `assets/img/logo/logo-mark.png` — diamond mark (transparent, used in the header + favicon)
+- ✅ `assets/img/logo/logo-full.png` — full logo with wordmark (transparent, used in the footer)
+- ✅ `assets/img/logo/logo-navy-square.png` — original navy square (for social avatars)
+- ✅ `assets/img/logo/favicon.png` — browser-tab icon
 
 ## Home (`index.html`)
 - ⬜ `assets/video/hero.mp4` — hero background video (muted loop; ~10–20s, landscape)
@@ -35,9 +38,10 @@ Legend: ⬜ needed · ✅ received & wired
 ## QR Invitations (`qr-invitations.html`)
 - ⬜ `assets/img/qr/hero.jpg` — page banner
 
-## Gallery (`gallery.html`)
-- ⬜ `assets/img/gallery/1..9.jpg` — grid thumbnails
-- ⬜ `assets/img/gallery/large/1..9.jpg` — full-size versions for the lightbox (optional; can reuse the same files)
+## Gallery (`gallery.html`) — organised by occasion/venue folder
+- ✅ `assets/img/gallery/beach-rotana/` — 22 photos, wired into the Gallery + Home + Weddings pages
+- ⬜ `assets/img/gallery/medeem/` — **the Medeem.zip upload was empty — please re-send**
+- ⬜ further occasions: send a zip per folder and it becomes its own labelled gallery section
 
 ## Contact (`contact.html`)
 - ⬜ `assets/img/contact/hero.jpg` — page banner

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weddings | Diamond — Luxury Wedding Planning in the UAE</title>
+  <title>Weddings | Diamond Events — Luxury Wedding Planning in the UAE</title>
   <meta name="description" content="Full and partial wedding planning across the UAE — kosha design, flowers, zaffa, ladies' celebrations and QR invitations, all under one in-house team.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -22,9 +23,12 @@
           <li><a class="nav__link" href="services.html" data-ar><span class="lang-en">Services</span><span class="lang-ar">الخدمات</span></a></li>
         </ul>
       </nav>
-      <a class="brand" href="index.html" aria-label="Diamond home">
-        <div class="brand__word">Diamond</div>
-        <div class="brand__tag" data-ar><span class="lang-en">Weddings &amp; Events</span><span class="lang-ar">حفلات الزفاف والمناسبات</span></div>
+      <a class="brand" href="index.html" aria-label="Diamond Events home">
+        <img class="brand__logo" src="assets/img/logo/logo-mark.png" alt="Diamond Events">
+        <span class="brand__text">
+          <span class="brand__word">Diamond Events</span>
+          <span class="brand__tag" data-ar><span class="lang-en">Weddings &amp; Flowers</span><span class="lang-ar">أعراس وزهور</span></span>
+        </span>
       </a>
       <nav class="nav nav--right" aria-label="Primary right">
         <ul class="nav__list">
@@ -55,7 +59,7 @@
 
   <!-- PAGE HERO -->
   <section class="page-hero">
-    <div class="page-hero__media"><!-- <img src="assets/img/weddings-hero.jpg" alt=""> --></div>
+    <div class="page-hero__media"><img src="assets/img/gallery/beach-rotana/beach-rotana-13.jpg" alt="Luxury wedding ballroom produced by Diamond Events"></div>
     <div class="container">
       <span class="eyebrow" style="color:var(--gold-pale)" data-ar><span class="lang-en">Wedding Planning</span><span class="lang-ar">تنظيم حفلات الزفاف</span></span>
       <h1 data-ar><span class="lang-en">Your Wedding, Designed to Be Remembered</span><span class="lang-ar">زفافك… مصمّم ليبقى في الذاكرة</span></h1>
@@ -77,7 +81,7 @@
   <!-- EVERYTHING UNDER ONE ROOF -->
   <section class="section">
     <div class="container split">
-      <div class="split__media reveal"><div class="ph"><span>Image — Wedding kosha</span></div></div>
+      <div class="split__media reveal"><img src="assets/img/gallery/beach-rotana/beach-rotana-01.jpg" alt="Wedding stage with red and pink floral installations" loading="lazy"></div>
       <div class="reveal">
         <span class="eyebrow" data-ar><span class="lang-en">Everything, Under One Roof</span><span class="lang-ar">كل شيء تحت سقف واحد</span></span>
         <h2 data-ar><span class="lang-en">Most Weddings Fail in the Gaps Between Suppliers</span><span class="lang-ar">تفشل معظم الأعراس في الفجوات بين المورّدين</span></h2>
@@ -115,10 +119,10 @@
         <div class="divider"></div>
       </div>
       <div class="gallery-grid reveal" style="margin-top:3rem">
-        <div class="gallery-item" data-label="Wedding 1"><div class="ph"><span>Photo 1</span></div></div>
-        <div class="gallery-item" data-label="Wedding 2"><div class="ph"><span>Photo 2</span></div></div>
-        <div class="gallery-item" data-label="Wedding 3"><div class="ph"><span>Photo 3</span></div></div>
-        <div class="gallery-item" data-label="Wedding 4"><div class="ph"><span>Photo 4</span></div></div>
+        <div class="gallery-item" data-full="assets/img/gallery/beach-rotana/beach-rotana-03.jpg"><img src="assets/img/gallery/beach-rotana/beach-rotana-03.jpg" alt="Wedding stage and florals at Beach Rotana" loading="lazy"></div>
+        <div class="gallery-item" data-full="assets/img/gallery/beach-rotana/beach-rotana-05.jpg"><img src="assets/img/gallery/beach-rotana/beach-rotana-05.jpg" alt="Guest tables with blush centrepieces" loading="lazy"></div>
+        <div class="gallery-item" data-full="assets/img/gallery/beach-rotana/beach-rotana-19.jpg"><img src="assets/img/gallery/beach-rotana/beach-rotana-19.jpg" alt="Rose centrepiece and place settings" loading="lazy"></div>
+        <div class="gallery-item" data-full="assets/img/gallery/beach-rotana/beach-rotana-21.jpg"><img src="assets/img/gallery/beach-rotana/beach-rotana-21.jpg" alt="Styled wedding table with candles and florals" loading="lazy"></div>
       </div>
       <div class="center" style="margin-top:2.5rem"><a class="btn btn--ghost" href="gallery.html" data-ar><span class="lang-en">View Full Gallery</span><span class="lang-ar">عرض المعرض كاملاً</span></a></div>
     </div>
@@ -156,11 +160,19 @@
   </section>
 
   <!-- FOOTER -->
+  <!-- LIGHTBOX -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous">‹</button>
+    <div data-lb-inner></div>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next">›</button>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="brand__word">Diamond</div>
+          <img class="footer__logo" src="assets/img/logo/logo-full.png" alt="Diamond Events — Weddings &amp; Flowers">
           <p data-ar><span class="lang-en">Luxury wedding &amp; event planning across Abu Dhabi, Dubai and all seven emirates. Creating moments, crafting memories.</span><span class="lang-ar">تخطيط فاخر لحفلات الزفاف والمناسبات في أبوظبي ودبي وجميع الإمارات. نصنع اللحظات ونحفظ الذكريات.</span></p>
         </div>
         <div><h4 data-ar><span class="lang-en">Explore</span><span class="lang-ar">تصفّح</span></h4><ul><li><a href="weddings.html" data-ar><span class="lang-en">Weddings</span><span class="lang-ar">حفلات الزفاف</span></a></li><li><a href="events.html" data-ar><span class="lang-en">Events</span><span class="lang-ar">المناسبات</span></a></li><li><a href="services.html" data-ar><span class="lang-en">Services</span><span class="lang-ar">الخدمات</span></a></li><li><a href="design.html" data-ar><span class="lang-en">Design</span><span class="lang-ar">التصميم</span></a></li></ul></div>
@@ -168,7 +180,7 @@
         <div><h4 data-ar><span class="lang-en">Contact</span><span class="lang-ar">تواصل</span></h4><ul><li><a href="tel:+97150000000">+971 50 000 0000</a></li><li><a href="https://wa.me/9710000000000" target="_blank" rel="noopener">WhatsApp</a></li><li>Office One — [Area], Abu Dhabi</li><li>Office Two — [Area], Abu Dhabi</li></ul></div>
       </div>
       <div class="footer__bottom">
-        <span>© <span data-year>2026</span> Diamond. <span data-ar><span class="lang-en">All Rights Reserved.</span><span class="lang-ar">جميع الحقوق محفوظة.</span></span></span>
+        <span>© <span data-year>2026</span> Diamond Events. <span data-ar><span class="lang-en">All Rights Reserved.</span><span class="lang-ar">جميع الحقوق محفوظة.</span></span></span>
         <span data-ar><span class="lang-en">Creating Moments, Crafting Memories.</span><span class="lang-ar">نصنع اللحظات، ونحفظ الذكريات.</span></span>
       </div>
     </div>
