@@ -23,7 +23,7 @@ Legend: ⬜ needed · ✅ received & wired
 - ⬜ `assets/img/weddings/1..4.jpg` — 4 gallery-preview photos
 
 ## Events (`events.html`)
-- ⬜ `assets/img/events/hero.jpg` — page banner
+- ✅ page banner (using a Medeem lounge photo — swap anytime)
 - ⬜ `assets/img/events/dashboard.jpg` — QR guest-management photo
 
 ## Services (`services.html`)
@@ -40,7 +40,7 @@ Legend: ⬜ needed · ✅ received & wired
 
 ## Gallery (`gallery.html`) — organised by occasion/venue folder
 - ✅ `assets/img/gallery/beach-rotana/` — 22 photos, wired into the Gallery + Home + Weddings pages
-- ⬜ `assets/img/gallery/medeem/` — **the Medeem.zip upload was empty — please re-send**
+- ✅ `assets/img/gallery/medeem/` — 13 photos, wired into the Gallery + Events hero
 - ⬜ further occasions: send a zip per folder and it becomes its own labelled gallery section
 
 ## Contact (`contact.html`)
