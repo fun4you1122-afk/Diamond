@@ -27,7 +27,7 @@ Legend: ⬜ needed · ✅ received & wired
 - ⬜ `assets/img/events/dashboard.jpg` — QR guest-management photo
 
 ## Services (`services.html`)
-- ⬜ `assets/img/services/hero.jpg` — page banner
+- ✅ page banner (Beach Rotana photo) + interactive hover-preview service lists
 
 ## Design (`design.html`)
 - ⬜ `assets/img/design/hero.jpg` — page banner
@@ -42,10 +42,15 @@ Legend: ⬜ needed · ✅ received & wired
 ## Gallery (`gallery.html`) — organised by occasion/venue folder
 - ✅ `assets/img/gallery/beach-rotana/` — 22 photos, wired into the Gallery + Home + Weddings pages
 - ✅ `assets/img/gallery/medeem/` — 13 photos → dedicated scrollytelling page `medeem.html` + gallery banner + Events hero
+- ⬜ `assets/img/gallery/intercontinental/` — **InterContinental photos/video: upload did not arrive, please re-send**
 - ⬜ further occasions: send a zip per folder and it becomes its own labelled gallery section
 
+## Videos — pending re-upload (did not arrive in the last batch)
+- ⬜ `assets/video/medeem-cover.mp4` — Medeem film (slot ready in medeem.html cover)
+- ⬜ `assets/video/events-hero.mp4` — InterContinental film (slot ready in events.html banner)
+
 ## Contact (`contact.html`)
-- ⬜ `assets/img/contact/hero.jpg` — page banner
+- ✅ page banner (Medeem photo)
 
 ---
 
