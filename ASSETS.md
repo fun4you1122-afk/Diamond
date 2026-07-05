@@ -30,14 +30,14 @@ Legend: ⬜ needed · ✅ received & wired
 - ✅ page banner (Beach Rotana photo) + interactive hover-preview service lists
 
 ## Design (`design.html`)
-- ⬜ `assets/img/design/hero.jpg` — page banner
+- ✅ page banner (Beach Rotana photo)
 - ✅ interactive 3D stage diorama (drag-to-orbit, CSS 3D — replaceable with a real render photo anytime)
 - ✅ sketch ↔ reality comparison slider (uses a Beach Rotana photo)
 - ⬜ `assets/img/design/1..4.jpg` — 4 "why design" portfolio photos
 
 ## QR Invitations (`qr-invitations.html`)
 - ✅ live showcase: animated WhatsApp phone mock, scanner, dashboard + real scannable demo QR (`assets/img/qr/demo-qr.png`)
-- ⬜ `assets/img/qr/hero.jpg` — page banner
+- ✅ page banner (Medeem stationery photo)
 
 ## Gallery (`gallery.html`) — organised by occasion/venue folder
 - ✅ `assets/img/gallery/beach-rotana/` — 22 photos, wired into the Gallery + Home + Weddings pages
@@ -45,9 +45,12 @@ Legend: ⬜ needed · ✅ received & wired
 - ⬜ `assets/img/gallery/intercontinental/` — **InterContinental photos/video: upload did not arrive, please re-send**
 - ⬜ further occasions: send a zip per folder and it becomes its own labelled gallery section
 
-## Videos — pending re-upload (did not arrive in the last batch)
-- ⬜ `assets/video/medeem-cover.mp4` — Medeem film (slot ready in medeem.html cover)
-- ⬜ `assets/video/events-hero.mp4` — InterContinental film (slot ready in events.html banner)
+## Videos
+- ✅ `assets/video/medeem-cover.mp4` — Medeem film (31 MB → 10 MB), full-screen cover of medeem.html
+- ✅ `assets/video/events-hero.mp4` — InterContinental film (17 MB → 9 MB), Events page banner
+
+## Testimonials
+- ✅ 9 five-star Google reviews typeset as cards on the home page (Load More after 6)
 
 ## Contact (`contact.html`)
 - ✅ page banner (Medeem photo)

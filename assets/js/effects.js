@@ -175,3 +175,11 @@
     activate(0);
   });
 })();
+
+/* ---------- Testimonials: load more ---------- */
+(function () {
+  var wrap = document.querySelector('.tst-wrap');
+  if (!wrap) return;
+  var btn = wrap.querySelector('.tst-more');
+  if (btn) btn.addEventListener('click', function () { wrap.classList.add('is-open'); });
+})();
