@@ -182,7 +182,16 @@
   <!-- ============================ QR FEATURE ============================ -->
   <section class="section bg-dark">
     <div class="container split split--rev">
-      <div class="split__media reveal"><div class="ph ph--dark"><span>Image — QR check-in at the door</span></div></div>
+      <div class="split__media reveal" style="aspect-ratio:auto;box-shadow:none;overflow:visible;display:grid;place-items:center">
+        <div class="invite-card" style="transform:rotate(-2deg)">
+          <img class="mark" src="assets/img/logo/logo-mark.png" alt="">
+          <div class="inv-eyebrow" data-ar><span class="lang-en">You Are Invited</span><span class="lang-ar">أنتم مدعوون</span></div>
+          <h4>Sara &amp; Ahmed</h4>
+          <div class="inv-date" data-ar><span class="lang-en">Thursday · 8:00 PM · Abu Dhabi</span><span class="lang-ar">الخميس · ٨ مساءً · أبوظبي</span></div>
+          <img class="inv-qr" src="assets/img/qr/demo-qr.png" alt="Demo QR invitation code — scan to message Diamond Events" loading="lazy">
+          <div class="inv-note" data-ar><span class="lang-en">Scans once. Then it's done.</span><span class="lang-ar">يُمسح مرة واحدة فقط.</span></div>
+        </div>
+      </div>
       <div class="reveal">
         <span class="eyebrow" data-ar><span class="lang-en">Diamond Events Technology</span><span class="lang-ar">تقنية دايموند إيفنتس</span></span>
         <h2 data-ar><span class="lang-en">Digital Invitations &amp; QR Check-In</span><span class="lang-ar">دعوات رقمية وتسجيل دخول بالرمز</span></h2>
@@ -331,5 +340,6 @@
   </a>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/effects.js"></script>
 </body>
 </html>
