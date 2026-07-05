@@ -31,16 +31,17 @@ Legend: ⬜ needed · ✅ received & wired
 
 ## Design (`design.html`)
 - ⬜ `assets/img/design/hero.jpg` — page banner
-- ⬜ `assets/img/design/3d-render.jpg` — 3D render example
-- ⬜ `assets/img/design/sketch-artist.jpg` — live sketch artist photo
+- ✅ interactive 3D stage diorama (drag-to-orbit, CSS 3D — replaceable with a real render photo anytime)
+- ✅ sketch ↔ reality comparison slider (uses a Beach Rotana photo)
 - ⬜ `assets/img/design/1..4.jpg` — 4 "why design" portfolio photos
 
 ## QR Invitations (`qr-invitations.html`)
+- ✅ live showcase: animated WhatsApp phone mock, scanner, dashboard + real scannable demo QR (`assets/img/qr/demo-qr.png`)
 - ⬜ `assets/img/qr/hero.jpg` — page banner
 
 ## Gallery (`gallery.html`) — organised by occasion/venue folder
 - ✅ `assets/img/gallery/beach-rotana/` — 22 photos, wired into the Gallery + Home + Weddings pages
-- ✅ `assets/img/gallery/medeem/` — 13 photos, wired into the Gallery + Events hero
+- ✅ `assets/img/gallery/medeem/` — 13 photos → dedicated scrollytelling page `medeem.html` + gallery banner + Events hero
 - ⬜ further occasions: send a zip per folder and it becomes its own labelled gallery section
 
 ## Contact (`contact.html`)
