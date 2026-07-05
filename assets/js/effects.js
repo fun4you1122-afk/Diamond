@@ -156,3 +156,22 @@
     }
   });
 })();
+
+/* ---------- Services showcase: hover list <-> image preview ---------- */
+(function () {
+  document.querySelectorAll('.svcx').forEach(function (sec) {
+    var items = Array.prototype.slice.call(sec.querySelectorAll('.svcx-item'));
+    var imgs = Array.prototype.slice.call(sec.querySelectorAll('.svcx__preview img'));
+    function activate(i) {
+      items.forEach(function (it, j) { it.classList.toggle('is-on', j === i); });
+      imgs.forEach(function (im, j) { im.classList.toggle('is-on', j === i); });
+    }
+    items.forEach(function (it, i) {
+      ['pointerenter', 'focus', 'click'].forEach(function (ev) {
+        it.addEventListener(ev, function () { activate(i); });
+      });
+      it.setAttribute('tabindex', '0');
+    });
+    activate(0);
+  });
+})();
