@@ -79,8 +79,17 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.12;
 html[lang="ar"] body { font-family: var(--sans-ar); }
 html[lang="ar"] h1, html[lang="ar"] h2,
 html[lang="ar"] h3, html[lang="ar"] h4 { font-family: var(--serif-ar); }
+/* Letter-spacing is a Latin-typography convention: it disconnects Arabic
+   script's required letter joins, so every tracked heading/label/eyebrow
+   reads as broken, floating glyphs. Arabic must always render at its
+   natural spacing regardless of what the English version sets. */
+html[lang="ar"] * { letter-spacing: normal !important; }
 html[dir="rtl"] .nav__list { flex-direction: row-reverse; }
 html[dir="rtl"] .cta-row { flex-direction: row-reverse; }
+/* Phone numbers / dates / handles must render as a single isolated
+   left-to-right run inside RTL text, or the bidi algorithm can reorder
+   the digits and symbols (e.g. "+971 50 141 2424" -> "2424 141 50 971+"). */
+bdi[dir="ltr"] { unicode-bidi: isolate; direction: ltr; }
 
 /* Show the correct language string, hide the other */
 [data-ar] > .lang-ar { display: none; }
