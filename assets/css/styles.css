@@ -864,3 +864,12 @@ html[lang="ar"] .spec-tile__t { font-family: var(--serif-ar); }
   .tstc-track { animation: none; }
   .tstc-dup { display: none; }
 }
+
+/* ---------------- Contact card brand logos ---------------- */
+.contact-card { position: relative; }
+.contact-card__logo {
+  position: absolute; top: 1.5rem; inset-inline-end: 1.5rem;
+  height: 46px; width: auto; filter: drop-shadow(0 4px 10px rgba(36,26,8,.18));
+  transition: transform .3s var(--ease);
+}
+.contact-card:hover .contact-card__logo { transform: scale(1.1) translateY(-2px); }
