@@ -68,13 +68,17 @@
   });
 
   /* ---- Reveal on scroll ---------------------------------------------- */
+  /* threshold must stay 0: an area-percentage threshold (e.g. 0.12) can
+     never be satisfied by a target taller than ~8x the viewport (a long
+     photo grid, a multi-item showcase) since that much of it can never
+     be onscreen at once - the element would sit at opacity:0 forever. */
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && reveals.length) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
     reveals.forEach(function (el) { io.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add('is-visible'); });
