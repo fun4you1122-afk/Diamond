@@ -839,3 +839,28 @@ html[lang="ar"] .spec-tile__t { font-family: var(--serif-ar); }
 .tst-wrap.is-open .tst-fade, .tst-wrap.is-open .tst-more { display: none; }
 @media (max-width: 980px) { .tst-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .tst-grid { grid-template-columns: 1fr; } }
+
+/* ---------------- Testimonials: scrolling columns ---------------- */
+.tstc-viewport {
+  display: flex; justify-content: center; gap: 1.5rem;
+  max-height: 660px; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+          mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+}
+.tstc-track {
+  display: flex; flex-direction: column; gap: 1.5rem; padding-bottom: 1.5rem;
+  animation: tstScroll var(--dur, 26s) linear infinite; will-change: transform;
+}
+.tstc-col:hover .tstc-track { animation-play-state: paused; }
+@keyframes tstScroll { to { transform: translateY(-50%); } }
+.tstc-card { width: 320px; border-radius: 22px; padding: 1.8rem; }
+.tstc-card .tst-head { margin-top: 1.1rem; }
+.tstc-col--2 { display: none; }
+.tstc-col--3 { display: none; }
+@media (min-width: 760px)  { .tstc-col--2 { display: block; } }
+@media (min-width: 1100px) { .tstc-col--3 { display: block; } }
+@media (prefers-reduced-motion: reduce) {
+  .tstc-viewport { max-height: none; -webkit-mask-image: none; mask-image: none; flex-wrap: wrap; }
+  .tstc-track { animation: none; }
+  .tstc-dup { display: none; }
+}
