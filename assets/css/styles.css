@@ -882,3 +882,32 @@ html[lang="ar"] .spec-tile__t { font-family: var(--serif-ar); }
   transition: transform .3s var(--ease);
 }
 .contact-card:hover .contact-card__logo { transform: scale(1.1) translateY(-2px); }
+
+/* ---------------- Golden dust particle signature ---------------- */
+.dust-band {
+  position: relative; min-height: clamp(540px, 85vh, 760px);
+  background: radial-gradient(circle at 50% 30%, #14100a, #050403 75%);
+  overflow: hidden; display: flex; align-items: flex-end; justify-content: center;
+}
+#dust-canvas { position: absolute; inset: 0; }
+#dust-canvas canvas { display: block; width: 100% !important; height: 100% !important; }
+.dust-band__fade {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(5,4,3,.35), transparent 38%, rgba(5,4,3,.9));
+}
+.dust-band__body {
+  position: relative; z-index: 1; text-align: center; pointer-events: none;
+  padding: 0 var(--gutter) clamp(48px, 8vh, 88px);
+}
+.dust-band__body h2 {
+  font-size: clamp(3rem, 9vw, 5.6rem); color: var(--cream); font-weight: 400; line-height: .95;
+}
+.dust-band__body h2 em {
+  font-style: italic;
+  background: linear-gradient(180deg, var(--gold-pale), rgba(231,205,146,.15));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.dust-band__body p { margin: 1.3rem auto 0; max-width: 48ch; color: #b9ad92; font-size: .95rem; }
+@media (prefers-reduced-motion: reduce) {
+  .dust-band { min-height: 0; padding-block: 4.5rem; align-items: center; }
+}
