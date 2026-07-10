@@ -140,6 +140,45 @@
     });
   }
 
+  /* ---- Quick-contact drawer -------------------------------------------- */
+  var qc = document.querySelector('[data-qc]');
+  if (qc) {
+    var qcToggle = qc.querySelector('[data-qc-toggle]');
+    var QC_KEY = 'diamond-qc-open';
+    var qcOpen = window.innerWidth > 640;
+    try {
+      var savedQc = localStorage.getItem(QC_KEY);
+      if (savedQc !== null) qcOpen = savedQc === '1';
+    } catch (e) {}
+    qc.classList.toggle('is-open', qcOpen);
+    if (qcToggle) {
+      qcToggle.setAttribute('aria-expanded', qcOpen ? 'true' : 'false');
+      qcToggle.addEventListener('click', function () {
+        qcOpen = !qcOpen;
+        qc.classList.toggle('is-open', qcOpen);
+        qcToggle.setAttribute('aria-expanded', qcOpen ? 'true' : 'false');
+        try { localStorage.setItem(QC_KEY, qcOpen ? '1' : '0'); } catch (e) {}
+      });
+    }
+  }
+
+  /* ---- Concierge chat bubble -------------------------------------------- */
+  var concierge = document.querySelector('[data-concierge]');
+  if (concierge) {
+    var CONCIERGE_KEY = 'diamond-concierge-closed';
+    var conciergeClosed = false;
+    try { conciergeClosed = sessionStorage.getItem(CONCIERGE_KEY) === '1'; } catch (e) {}
+    if (conciergeClosed) concierge.classList.add('is-closed');
+    var conciergeClose = concierge.querySelector('[data-concierge-close]');
+    if (conciergeClose) {
+      conciergeClose.addEventListener('click', function (e) {
+        e.preventDefault();
+        concierge.classList.add('is-closed');
+        try { sessionStorage.setItem(CONCIERGE_KEY, '1'); } catch (e) {}
+      });
+    }
+  }
+
   /* ---- Footer year ---------------------------------------------------- */
   var yr = document.querySelector('[data-year]');
   if (yr) yr.textContent = new Date().getFullYear();
