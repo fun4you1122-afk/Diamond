@@ -250,9 +250,45 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/971501412424" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
+  <!-- Side widgets: Instagram tab, quick-contact drawer, concierge chat -->
+  <a class="side-tab" href="https://www.instagram.com/diamondeventsuae/" target="_blank" rel="noopener" aria-label="Follow Diamond Events on Instagram">
+    <img src="assets/img/icons/instagram.png" alt="" width="20" height="20">
+    <span class="side-tab__label"><bdi dir="ltr">@diamondeventsuae</bdi></span>
   </a>
+
+  <div class="qc" data-qc>
+    <div class="qc__panel">
+      <a class="qc__item" href="tel:+971501412424">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+        <span data-ar><span class="lang-en">Call Us</span><span class="lang-ar">اتصل بنا</span></span>
+      </a>
+      <a class="qc__item" href="contact.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2.24V6h16v.24l-8 6.99-8-6.99zM4 8.51V18h16V8.51l-7.4 6.47a1 1 0 01-1.2 0L4 8.51z"/></svg>
+        <span data-ar><span class="lang-en">Enquiry</span><span class="lang-ar">استفسار</span></span>
+      </a>
+      <a class="qc__item" href="https://wa.me/971501412424" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+    <button class="qc__toggle" type="button" data-qc-toggle aria-label="Toggle quick contact" aria-expanded="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 011 1v11a1 1 0 01-1 1H9l-5 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg>
+    </button>
+  </div>
+
+  <div class="concierge" data-concierge>
+    <button class="concierge__close" type="button" data-concierge-close aria-label="Close">&times;</button>
+    <a class="concierge__bubble" href="https://wa.me/971501412424?text=Hi%20Diamond%20Events%2C%20I%27d%20love%20to%20plan%20my%20event." target="_blank" rel="noopener">
+      <span class="concierge__copy">
+        <strong data-ar><span class="lang-en">Chat with us</span><span class="lang-ar">تحدث معنا</span></strong>
+        <span data-ar><span class="lang-en">Your Event Concierge</span><span class="lang-ar">مستشار فعاليتك</span></span>
+      </span>
+      <span class="concierge__avatar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.4 0-8 2.2-8 5v1a1 1 0 001 1h14a1 1 0 001-1v-1c0-2.8-3.6-5-8-5z"/></svg>
+        <span class="concierge__badge">1</span>
+      </span>
+    </a>
+  </div>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/effects.js"></script>
 </body>
