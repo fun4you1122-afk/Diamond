@@ -441,6 +441,9 @@ html[dir="rtl"] .faq__q { text-align: right; }
 .footer a:hover { color: var(--gold-pale); }
 .footer li { margin-bottom: .7rem; }
 .footer__bottom { border-top: 1px solid rgba(231,205,146,.12); margin-top: 3rem; padding-top: 1.6rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: .82rem; }
+.footer__credit { display: inline-flex; align-items: center; gap: .5em; flex-wrap: wrap; }
+.footer__credit-ig { display: inline-flex; align-items: center; gap: .35em; }
+.footer__credit-ig img { width: 14px; height: 14px; border-radius: 3px; }
 .socials { display: flex; gap: .8rem; }
 .socials a { width: 38px; height: 38px; border: 1px solid rgba(231,205,146,.25); border-radius: 50%; display: grid; place-items: center; }
 .socials svg { width: 18px; height: 18px; fill: currentColor; }
